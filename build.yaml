@@ -19,6 +19,6 @@
 ---
 include:
   - board: seeeduino_xiao_ble
-    shield: microdox_left
+    shield: pixo_left
   - board: seeeduino_xiao_ble
-    shield: microdox_right
+    shield: pixo_right
