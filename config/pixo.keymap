@@ -118,7 +118,6 @@ label= "FUN"                               ;
                            &bootloader &sys_reset  &trans        &trans       &sys_reset   &bootloader      
                         >;
                 };
-        };
                fps_layer {
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 label= "FPS"                               ;
@@ -141,5 +140,5 @@ label= "FPS"                               ;
                             &kp TAB      &kp LCTRL     &kp SPACE     &kp ENTER   &kp BSPC  &lt LALT BASE 
                         >;
                 };
-}
+        };
 };
