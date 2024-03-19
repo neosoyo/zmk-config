@@ -13,4 +13,4 @@ if PIXO_LEFT || PIXO_RIGHT
 config ZMK_SPLIT
     default y
 
-end
+endif
