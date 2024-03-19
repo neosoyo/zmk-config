@@ -112,9 +112,9 @@ label= "FUN"                               ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷          ╷  ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-    &kp F1     &kp F2      &kp F3      &kp F4      &kp F5        &kp CAPS     &trans       &kp BASE     &kp FPS         &trans       
-    &kp F6     &kp F7      &kp F8      &kp F9      &kp F10       &kp BT_SEL 0 &kp BT_SEL 1 &kp BT_SEL 2 &kp BT_SEL 3    &trans 
-    &trans     &trans      &trans      &kp F11     &kp F12       &kp OUT_USB  &kp OUT_BLE  &kp PSCRN    &kp PAUSE_BREAK &kp BT_CLR         
+    &kp F1     &kp F2      &kp F3      &kp F4      &kp F5        &kp CAPS      &trans        &kp BASE     &kp FPS         &trans       
+    &kp F6     &kp F7      &kp F8      &kp F9      &kp F10       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_SEL 3    &trans 
+    &trans     &trans      &trans      &kp F11     &kp F12       &out OUT_USB  &out OUT_BLE  &kp PSCRN    &kp PAUSE_BREAK &bt BT_CLR         
                            &bootloader &sys_reset  &trans        &trans       &sys_reset   &bootloader      
                         >;
                 };
