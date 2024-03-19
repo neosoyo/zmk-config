@@ -67,7 +67,7 @@ label= "SYM"                              ;
     &kp PLUS     &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp COMMA       &kp EXCL    &kp AT_SIGN &kp HASH   &kp DOLLAR  &kp PERCENT
     &kp MINUS    &kp KP_N4   &kp KP_N5   &kp KP_N6   &kp DOT         &kp AMPS    &kp ASTRK   &kp UNDER  &kp EQUAL   &kp QMARK
     &kp KP_N0    &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp FSLH        &kp CARET   &kp TILDE   &kp APOS   &kp GRAVE   &kp BSLH      
-                             &kp LGUI    &kp BSPC    &lt FUN SPACE   &trans      &kp LSHFT   &KP LALT     
+                             &kp LGUI    &kp BSPC    &lt FUN SPACE   &trans      &kp LSHFT   &kp LALT     
                         >;
                 };
 
@@ -91,7 +91,7 @@ label= "NAV"                               ;
 // ╷           ╷           ╷           ╷           ╷          ╷  ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
     &kp C_AC_CLOSE  &kp AT     &kp HASH    &kp DLLR    &kp C_VOL_UP   &kp HOME    &kp PG_DN    &kp PG_UP  &kp END     &kp CAPS       
-    &kp LCTRL       &KP LGUI   &kp LALT    &kp TAB     &kp C_VOL_DN   &kp LEFT    &kp DOWN     &kp UP     &kp RIGHT   &kp PSCRN 
+    &kp LCTRL       &kp LGUI   &kp LALT    &kp TAB     &kp C_VOL_DN   &kp LEFT    &kp DOWN     &kp UP     &kp RIGHT   &kp PSCRN 
     &kp LC(Z)       &kp LC(X)  &kp LC(C)   &kp LC(V)   &kp C_PP       &kp INS     &kp DELETE   &kp C_PREV &kp C_NEXT  &kp PAUSE_BREAK         
                                &kp LGUI    &kp LCTRL   &trans         &lt FUN RET &kp LSHFT    &kp LALT      
                         >;
@@ -113,7 +113,7 @@ label= "FUN"                               ;
 // ╷           ╷           ╷           ╷           ╷          ╷  ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
     &kp F1     &kp F2      &kp F3      &kp F4      &kp F5        &kp CAPS     &trans       &kp BASE     &kp FPS         &trans       
-    &kp F6     &KP F7      &kp F8      &kp F9      &kp F10       &kp BT_SEL 0 &kp BT_SEL 1 &kp BT_SEL 2 &kp BT_SEL 3    &trans 
+    &kp F6     &kp F7      &kp F8      &kp F9      &kp F10       &kp BT_SEL 0 &kp BT_SEL 1 &kp BT_SEL 2 &kp BT_SEL 3    &trans 
     &trans     &trans      &trans      &kp F11     &kp F12       &kp OUT_USB  &kp OUT_BLE  &kp PSCRN    &kp PAUSE_BREAK &kp BT_CLR         
                            &bootloader &sys_reset  &trans        &trans       &sys_reset   &bootloader      
                         >;
