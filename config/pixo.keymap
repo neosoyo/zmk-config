@@ -91,9 +91,9 @@ label= "NAV"                               ;
 // ╷           ╷           ╷           ╷           ╷          ╷  ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
     &kp C_AC_CLOSE  &kp AT     &kp HASH    &kp DLLR    &kp C_VOL_UP   &kp HOME    &kp PG_DN    &kp PG_UP  &kp END     &kp CAPS       
-    &kp LCTRL       &LGUI      &kp LALT    &kp TAB     &kp C_VOL_DN   &kp LEFT    &kp DOWN     &kp UP     &kp RIGHT   &kp PSCRN 
-    &kp LG(Z)       &kp LG(X)  &kp LG(C)   &kp LG(V)   &kp C_PP       &kp INS     &kp DELETE   &kp C_PREV &kp C_NEXT  &kp PAUSE_BREAK         
-                               &kp LGUI    &kp LCTRL   &trans         &lt FUN RET &kp LSHFT    &LALT      
+    &kp LCTRL       &KP LGUI   &kp LALT    &kp TAB     &kp C_VOL_DN   &kp LEFT    &kp DOWN     &kp UP     &kp RIGHT   &kp PSCRN 
+    &kp LC(Z)       &kp LC(X)  &kp LC(C)   &kp LC(V)   &kp C_PP       &kp INS     &kp DELETE   &kp C_PREV &kp C_NEXT  &kp PAUSE_BREAK         
+                               &kp LGUI    &kp LCTRL   &trans         &lt FUN RET &kp LSHFT    &kp LALT      
                         >;
                 };
                 fun_layer {
