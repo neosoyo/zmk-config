@@ -19,6 +19,6 @@
 ---
 include:
   - board: seeeduino_xiao_ble
-    shield: pixo_left
+    shield: pixo_left rgbled_adapter
   - board: seeeduino_xiao_ble
-    shield: pixo_right
+    shield: pixo_right rgbled_adapter
