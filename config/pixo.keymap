@@ -27,21 +27,21 @@
 label= "BASE"                              ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-//┃     Q     ┃     W     ┃     E     ┃     R     ┃     T     ┃   ┃     Y     ┃     U     ┃     I     ┃     O     ┃     P     ┃
+//┃     Q     ┃     W     ┃     E     ┃     R     ┃     T     ┃   ┃   Y (()   ┃   U ([)   ┃   I ({)   ┃     O     ┃     P     ┃
 //┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//┃     A     ┃     S     ┃     D     ┃     F     ┃     G     ┃   ┃     H     ┃     J     ┃     K     ┃     L     ┃     ´     ┃
+//┃  A (LGUI) ┃  S (LALT) ┃ D (LCTRL) ┃ F (LSHFT) ┃     G     ┃   ┃   H ())   ┃   J (])   ┃   K (})   ┃     L     ┃     '     ┃
 //┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//┃     Z     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     N     ┃     M     ┃     ,     ┃     .     ┃     /     ┃
+//┃     Z     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃   N (_)   ┃     M     ┃     ,     ┃     .     ┃     /     ┃
 //┗━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┛
-//                        ┃    TAB    ┃    ESC    ┃    SPC    ┃   ┃   ENTER   ┃   BSPC    ┃    DEL    ┃
+//                        ┃    ESC    ┃    SPC    ┃    TAB    ┃   ┃   ENTER   ┃   BSPC    ┃    DEL    ┃
 //                        ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷  ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-    &kp Q       &kp W       &kp E        &kp R         &kp T         &kp Y       &kp U          &kp I       &kp O       &kp P
-    &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F   &kp G         &kp H       &mt RSHFT J    &mt RCTRL K &mt RALT L  &mt SQT APOS
-    &kp Z       &kp X       &kp C        &kp V         &kp B         &kp N       &kp M          &kp COMMA   &kp DOT     &kp FSLH
-                            &mt LGUI TAB &mt LCTRL ESC &lt NAV SPACE &lt SYM RET &mt LSHFT BSPC &mt LALT DEL 
+    &kp Q       &kp W       &kp E        &kp R         &kp T         &mt LPAR Y       &mt LBKT U     &mt LBRC I  &kp O       &kp P
+    &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F   &kp G         &mt RPAR H       &mt RBKT J     &mt RBRC K  &kp L       &kp SQT
+    &kp Z       &kp X       &kp C        &kp V         &kp B         &mt UNDER N      &kp M          &kp COMMA   &kp DOT     &kp FSLH
+                            &kp ESC      &kp SPC       &lt NAV TAB   &lt SYM RET      &kp BSPC       &kp DEL 
                         >;
                 };
 
@@ -59,15 +59,15 @@ label= "SYM"                              ;
 //┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 //┃     0     ┃     1     ┃     2     ┃     3     ┃     /     ┃   ┃     ^     ┃     ~     ┃     '     ┃     `     ┃     \     ┃
 //┗━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┛
-//                        ┃    GUI    ┃    BSPC   ┃    SPC    ┃   ┃           ┃   SHIFT   ┃    ALT    ┃
+//                        ┃    ESC    ┃    SPC    ┃    TAB    ┃   ┃           ┃   BSPC    ┃    DEL    ┃
 //                        ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷          ╷   ╷           ╷           ╷           ╷           ╷           ╷
 
-    &kp PLUS     &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp COMMA       &kp EXCL    &kp AT_SIGN &kp HASH   &kp DOLLAR  &kp PERCENT
-    &kp MINUS    &kp KP_N4   &kp KP_N5   &kp KP_N6   &kp DOT         &kp AMPS    &kp ASTRK   &kp UNDER  &kp EQUAL   &kp QMARK
-    &kp KP_N0    &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp FSLH        &kp CARET   &kp TILDE   &kp APOS   &kp GRAVE   &kp BSLH      
-                             &kp LGUI    &kp BSPC    &lt FUN SPACE   &trans      &kp LSHFT   &kp LALT     
+    &kp PLUS        &kp N7       &kp N8        &kp N9        &kp COMMA       &kp EXCL    &kp AT_SIGN &kp HASH   &kp DOLLAR  &kp PERCENT
+    &mt LGUI MINUS  &mt LALT N4  &mt LCTRL N5  &mt LSHFT N6  &kp DOT         &kp AMPS    &kp ASTRK   &kp UNDER  &kp EQUAL   &kp QMARK
+    &kp N0          &kp N1       &kp N2        &kp N3        &kp FSLH        &kp CARET   &kp TILDE   &kp APOS   &kp GRAVE   &kp BSLH      
+                                 &kp ESC       &kp SPC       &lt FUN TAB     &trans      &kp BSPC    &kp DEL     
                         >;
                 };
 
@@ -85,15 +85,15 @@ label= "NAV"                               ;
 //┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 //┃   Undo    ┃    cut    ┃   copy    ┃   paste   ┃ play-pause┃   ┃   insert  ┃  delete   ┃   prev    ┃   next    ┃  p-break  ┃
 //┗━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┛
-//                        ┃    GUI    ┃   CTRL    ┃           ┃   ┃   ENTER   ┃   SHIFT   ┃    ALT    ┃
+//                        ┃    GUI    ┃   CTRL    ┃           ┃   ┃   ENTER   ┃   BSPC    ┃    DEL    ┃
 //                        ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷          ╷  ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
     &kp C_AC_CLOSE  &kp AT     &kp HASH    &kp DLLR    &kp C_VOL_UP   &kp HOME    &kp PG_DN    &kp PG_UP  &kp END     &kp CAPS       
-    &kp LCTRL       &kp LGUI   &kp LALT    &kp TAB     &kp C_VOL_DN   &kp LEFT    &kp DOWN     &kp UP     &kp RIGHT   &kp PSCRN 
+    &kp LCTRL       &kp LGUI   &kp LALT    &kp LSHFT   &kp C_VOL_DN   &kp LEFT    &kp DOWN     &kp UP     &kp RIGHT   &kp PSCRN 
     &kp LC(Z)       &kp LC(X)  &kp LC(C)   &kp LC(V)   &kp C_PP       &kp INS     &kp DELETE   &kp C_PREV &kp C_NEXT  &kp PAUSE_BREAK         
-                               &kp LGUI    &kp LCTRL   &trans         &lt FUN RET &kp LSHFT    &kp LALT      
+                               &kp LGUI    &kp LCTRL   &trans         &lt FUN RET &kp BSPC     &kp DEL      
                         >;
                 };
                 fun_layer {
