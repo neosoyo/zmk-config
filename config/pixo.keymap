@@ -39,7 +39,7 @@ label= "BASE"                              ;
 // ╷           ╷           ╷           ╷           ╷           ╷  ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
     &kp Q       &kp W       &kp E        &kp R         &kp T         &mt LPAR Y       &mt LBKT U     &mt LBRC I  &kp O       &kp P
-    &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F   &kp G         &mt RPAR H       &mt RBKT J     &mt RBRC K  &kp L       &kp SQT
+    &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F   &kp G         &mt RPAR H       &mt RBKT J     &mt RBRC K  &kp L       &mt SQT SEMI
     &kp Z       &kp X       &kp C        &kp V         &kp B         &mt UNDER N      &kp M          &kp COMMA   &kp DOT     &kp FSLH
                             &kp ESC      &kp SPC       &lt NAV TAB   &lt SYM RET      &kp BSPC       &kp DEL 
                         >;
