@@ -30,7 +30,7 @@
 
                 base_layer {
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-label= "BASE"                              ;
+display-name= "BASE"                              ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 //┃     Q     ┃     W     ┃     E     ┃     R     ┃     T     ┃   ┃   Y (()   ┃   U ([)   ┃   I ({)   ┃     O     ┃     P     ┃
@@ -47,7 +47,7 @@ label= "BASE"                              ;
     &kp Q       &kp W       &kp E        &kp R         &kp T         &mt LPAR Y       &mt LBKT U     &mt LBRC I  &kp O       &kp P
     &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F   &kp G         &mt RPAR H       &mt RBKT J     &mt RBRC K  &kp L       &mt SQT SEMI
     &kp Z       &kp X       &kp C        &kp V         &kp B         &mt UNDER N      &kp M          &kp COMMA   &kp DOT     &kp FSLH
-                            &kp ESC      &kp SPC       &lt NAV TAB   &lt SYM RET      &kp BSPC       &kp DEL 
+                            &kp ESC      &kp SPACE       &lt NAV TAB   &lt SYM RET      &kp BSPC       &kp DEL 
                         >;
                 };
 
@@ -56,7 +56,7 @@ label= "BASE"                              ;
 
                 sym_layer {
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-label= "SYM"                              ;
+display-name= "SYM"                              ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 //┃     +     ┃     7     ┃     8     ┃     9     ┃     ,     ┃   ┃     !     ┃     @     ┃     #     ┃     $     ┃     %     ┃
@@ -73,7 +73,7 @@ label= "SYM"                              ;
     &kp PLUS        &kp N7       &kp N8        &kp N9        &mt GT LT       &kp EXCL    &kp AT_SIGN &kp HASH   &kp DOLLAR  &kp PERCENT
     &mt LGUI MINUS  &mt LALT N4  &mt LCTRL N5  &mt LSHFT N6  &kp DOT         &kp AMPS    &kp ASTRK   &kp UNDER  &kp EQUAL   &kp QMARK
     &kp N0          &kp N1       &kp N2        &kp N3        &kp FSLH        &kp CARET   &kp TILDE   &kp APOS   &kp GRAVE   &kp BSLH      
-                                 &kp ESC       &kp SPC       &lt FUN TAB     &trans      &kp BSPC    &kp DEL     
+                                 &kp ESC       &kp SPACE       &lt FUN TAB     &trans      &kp BSPC    &kp DEL     
                         >;
                 };
 
@@ -82,7 +82,7 @@ label= "SYM"                              ;
 
                 nav_layer {
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-label= "NAV"                               ;
+display-name= "NAV"                               ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 //┃ win-close ┃ tab-prev  ┃ tab-next  ┃ tab-close ┃  vol-up   ┃   ┃    home   ┃ page-down ┃  page-up  ┃    end    ┃  capslock ┃
@@ -104,7 +104,7 @@ label= "NAV"                               ;
                 };
                 fun_layer {
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-label= "FUN"                               ;
+display-name= "FUN"                               ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 //┃    F1     ┃    F2     ┃    F3     ┃    F4     ┃    F5     ┃   ┃  capslock ┃           ┃   BASE    ┃    FPS    ┃           ┃
@@ -118,7 +118,7 @@ label= "FUN"                               ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷          ╷  ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-    &kp F1     &kp F2      &kp F3      &kp F4      &kp F5        &kp CAPS      &trans        &kp BASE     &tog FPS        &tog BASE      
+    &kp F1     &kp F2      &kp F3      &kp F4      &kp F5        &kp CAPS      &trans        &kp BASE     &tog FPS        &trans     
     &kp F6     &kp F7      &kp F8      &kp F9      &kp F10       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_SEL 3    &trans 
     &trans     &trans      &trans      &kp F11     &kp F12       &out OUT_USB  &out OUT_BLE  &kp PSCRN    &kp PAUSE_BREAK &bt BT_CLR         
                            &bootloader &sys_reset  &trans        &trans       &sys_reset   &bootloader      
@@ -126,7 +126,7 @@ label= "FUN"                               ;
                 };
                fps_layer {
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-label= "DVORAK"                               ;
+display-name= "DVORAK"                               ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 //┃     Q     ┃     W     ┃     E     ┃     R     ┃     T     ┃   ┃     Y     ┃     U     ┃     I     ┃     O     ┃     P     ┃
@@ -143,7 +143,7 @@ label= "DVORAK"                               ;
     &kp QMARK   &kp CARET TILDE &kp GRAVE APOS   &kp H         &kp X         &kp W       &kp L     &kp T       &kp C       &kp P
     &kp I       &kp E           &kp A            &kp O         &kp U         &kp M       &kp D     &kp S       &kp R       &kp N  
     &kp Y       &cedilha        &kp J            &kp B         &kp K         &kp Q       &kp V     &kp G       &kp F       &kp Z
-                                &kp ESC          &kp SPC       &mt FUN TAB   &mt NAV ENTER   &kp BSPC  &kp DEL 
+                                &kp ESC          &kp SPACE       &mt FUN TAB   &mt NAV ENTER   &kp BSPC  &kp DEL 
                         >;
                 };
         };
