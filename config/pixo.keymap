@@ -140,7 +140,7 @@ display-name= "DVORAK"                               ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷  ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-    &kp QMARK   &kp CARET TILDE &kp GRAVE APOS   &kp H         &kp X         &kp W       &kp L     &kp T       &kp C       &kp P
+    &kp QMARK   &mt CARET TILDE &mt GRAVE APOS   &kp H         &kp X         &kp W       &kp L     &kp T       &kp C       &kp P
     &kp I       &kp E           &kp A            &kp O         &kp U         &kp M       &kp D     &kp S       &kp R       &kp N  
     &kp Y       &cedilha        &kp J            &kp B         &kp K         &kp Q       &kp V     &kp G       &kp F       &kp Z
                                 &kp ESC          &kp SPACE     &lt FUN TAB   &lt NAV ENTER   &kp BSPC  &kp DEL 
