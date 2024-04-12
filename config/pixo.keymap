@@ -15,16 +15,15 @@
   flavor = "hold-preferred";
   tapping-term-ms = <400>;
 };
- macros {
-        cedilha: cedilha {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_tap &kp APOS &kp C>;
-        };
-    };
-/ {
 
+/ {
+       macros {
+            cedilha: cedilha {
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings = <&macro_tap &kp APOS &kp C>;
+            };
+        };
         keymap {
                 compatible = "zmk,keymap";
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
@@ -71,7 +70,7 @@ label= "SYM"                              ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷          ╷   ╷           ╷           ╷           ╷           ╷           ╷
 
-    &kp PLUS        &kp N7       &kp N8        &kp N9        &kp COMMA       &kp EXCL    &kp AT_SIGN &kp HASH   &kp DOLLAR  &kp PERCENT
+    &kp PLUS        &kp N7       &kp N8        &kp N9        &mt GT LT       &kp EXCL    &kp AT_SIGN &kp HASH   &kp DOLLAR  &kp PERCENT
     &mt LGUI MINUS  &mt LALT N4  &mt LCTRL N5  &mt LSHFT N6  &kp DOT         &kp AMPS    &kp ASTRK   &kp UNDER  &kp EQUAL   &kp QMARK
     &kp N0          &kp N1       &kp N2        &kp N3        &kp FSLH        &kp CARET   &kp TILDE   &kp APOS   &kp GRAVE   &kp BSLH      
                                  &kp ESC       &kp SPC       &lt FUN TAB     &trans      &kp BSPC    &kp DEL     
