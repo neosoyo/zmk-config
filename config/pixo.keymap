@@ -15,7 +15,14 @@
   flavor = "hold-preferred";
   tapping-term-ms = <400>;
 };
-
+ macros {
+        cedilha: cedilha {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp APOS &kp C>;
+        };
+    };
 / {
 
         keymap {
@@ -112,7 +119,7 @@ label= "FUN"                               ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷          ╷  ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-    &kp F1     &kp F2      &kp F3      &kp F4      &kp F5        &kp CAPS      &trans        &kp BASE     &kp FPS         &trans       
+    &kp F1     &kp F2      &kp F3      &kp F4      &kp F5        &kp CAPS      &trans        &kp BASE     &tog FPS        &tog BASE      
     &kp F6     &kp F7      &kp F8      &kp F9      &kp F10       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_SEL 3    &trans 
     &trans     &trans      &trans      &kp F11     &kp F12       &out OUT_USB  &out OUT_BLE  &kp PSCRN    &kp PAUSE_BREAK &bt BT_CLR         
                            &bootloader &sys_reset  &trans        &trans       &sys_reset   &bootloader      
@@ -120,7 +127,7 @@ label= "FUN"                               ;
                 };
                fps_layer {
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-label= "FPS"                               ;
+label= "DVORAK"                               ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 //┃     Q     ┃     W     ┃     E     ┃     R     ┃     T     ┃   ┃     Y     ┃     U     ┃     I     ┃     O     ┃     P     ┃
@@ -134,10 +141,10 @@ label= "FPS"                               ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷  ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-    &kp Q       &kp W       &kp E        &kp R         &kp T         &kp Y       &kp U     &kp I       &kp O       &kp P
-    &kp A       &kp S       &kp D        &kp F         &kp G         &kp H       &kp J     &kp K       &kp L       &kp ESC  
-    &kp Z       &kp X       &kp C        &kp V         &kp B         &kp K       &kp M     &kp COMMA   &kp DOT     &kp FSLH
-                            &kp TAB      &kp LCTRL     &kp SPACE     &kp ENTER   &kp BSPC  &lt LALT BASE 
+    &kp QMARK   &kp CARET TILDE &kp GRAVE APOS   &kp H         &kp X         &kp W       &kp L     &kp T       &kp C       &kp P
+    &kp I       &kp E           &kp A            &kp O         &kp U         &kp M       &kp D     &kp S       &kp R       &kp N  
+    &kp Y       &cedilha        &kp J            &kp B         &kp K         &kp Q       &kp V     &kp G       &kp F       &kp Z
+                                &kp ESC          &kp SPC       &mt FUN TAB   &mt NAV ENTER   &kp BSPC  &kp DEL 
                         >;
                 };
         };
