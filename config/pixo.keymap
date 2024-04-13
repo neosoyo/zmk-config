@@ -53,7 +53,7 @@ display-name= "SYMBOLS";
  bindings = <
 
     &kp PT_PLUS          &kp PT_N7         &kp PT_N8          &kp PT_N9          &mt PT_GT PT_LT   &kp PT_EXCL  &kp PT_AT_SIGN &kp PT_HASH   &kp PT_DOLLAR  &kp PT_PERCENT
-    &mt LGUI PT_MINUS    &mt LALT PT_N4    &mt LCTRL PT_N5    &mt PT_LSHFT PT_N6 &kp PT_DOT        &kp PT_AMPS  &kp PT_ASTRK   &kp PT_UNDER  &kp PT_EQUAL   &kp PT_QMARK
+    &mt LGUI PT_MINUS    &mt LALT PT_N4    &mt LCTRL PT_N5    &mt LSHFT PT_N6    &kp PT_DOT        &kp PT_AMPS  &kp PT_ASTRK   &kp PT_UNDER  &kp PT_EQUAL   &kp PT_QMARK
     &kp PT_N0            &kp PT_N1         &kp PT_N2          &kp PT_N3          &kp PT_FSLH       &kp PT_CARET &kp PT_TILDE   &kp PT_APOS   &kp PT_GRAVE   &kp PT_BSLH      
                                            &kp ESC            &kp PT_SPACE       &lt FUN TAB       &trans       &kp BSPC       &kp DEL     
                         >;
@@ -62,9 +62,9 @@ display-name= "SYMBOLS";
 display-name= "NAV";                    
  bindings = <                    
     &kp C_AC_CLOSE &kp PT_AT   &kp PT_HASH &kp PT_DLLR  &kp C_VOL_UP   &kp HOME         &kp PG_DN   &kp PG_UP  &kp END    &kp PSCRN    
-    &kp LCTRL      &kp LGUI    &kp LALT    &kp PT_LSHFT &kp C_VOL_DN   &kp LEFT         &kp CAPS    &kp DOWN   &kp UP     &kp RIGHT  
+    &kp LCTRL      &kp LGUI    &kp LALT    &kp LSHFT    &kp C_VOL_DN   &kp LEFT         &kp CAPS    &kp DOWN   &kp UP     &kp RIGHT  
     &kp LC(Z)      &kp LC(X)   &kp LC(C)   &kp LC(V)    &kp C_PP       &kp INS          &kp DELETE  &kp C_PREV &kp C_NEXT &kp PAUSE_BREAK         
-                               &kp LGUI    &kp LCTRL &trans         &lt FUN PT_ENTER &kp PT_BSPC &kp DEL      
+                               &kp LGUI    &kp LCTRL    &trans         &lt FUN PT_ENTER &kp PT_BSPC &kp DEL      
                         >;
                 };
                 fun_layer {
