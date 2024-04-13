@@ -64,7 +64,7 @@ display-name= "NAV";
     &kp C_AC_CLOSE &kp PT_AT   &kp PT_HASH &kp PT_DLLR  &kp C_VOL_UP   &kp HOME         &kp PG_DN   &kp PG_UP  &kp END    &kp PSCRN    
     &kp LCTRL      &kp LGUI    &kp LALT    &kp LSHFT    &kp C_VOL_DN   &kp LEFT         &kp CAPS    &kp DOWN   &kp UP     &kp RIGHT  
     &kp LC(Z)      &kp LC(X)   &kp LC(C)   &kp LC(V)    &kp C_PP       &kp INS          &kp DELETE  &kp C_PREV &kp C_NEXT &kp PAUSE_BREAK         
-                               &kp LGUI    &kp LCTRL    &trans         &lt FUN PT_ENTER &kp PT_BSPC &kp DEL      
+                               &kp LGUI    &kp LCTRL    &trans         &lt FUN RET      &kp BSPC    &kp DEL      
                         >;
                 };
                 fun_layer {
