@@ -70,10 +70,10 @@ display-name= "NAV";
                 fun_layer {
 display-name= "FUNCTION";                    
  bindings = <                    
-    &kp PT_F1 &kp PT_F2 &kp PT_F3   &kp PT_F4  &kp PT_F5    &kp CAPS     &trans       &trans       &tog DVO        &trans     
-    &kp PT_F6 &kp PT_F7 &kp PT_F8   &kp PT_F9  &kp PT_F10   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3    &trans 
-    &trans    &trans    &trans      &kp PT_F11 &kp PT_F12   &out OUT_USB &out OUT_BLE &kp PSCRN    &kp PAUSE_BREAK &bt BT_CLR         
-                        &bootloader &sys_reset &trans       &trans       &sys_reset   &bootloader      
+    &kp F1 &kp F2 &kp F3      &kp F4     &kp F5    &kp CAPS     &trans       &trans       &tog DVO        &trans     
+    &kp F6 &kp F7 &kp F8      &kp F9     &kp F10   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3    &trans 
+    &trans &trans &trans      &kp F11    &kp F12   &out OUT_USB &out OUT_BLE &kp PSCRN    &kp PAUSE_BREAK &bt BT_CLR         
+                  &bootloader &sys_reset &trans    &trans       &sys_reset   &bootloader      
                         >;
                 };
         };
