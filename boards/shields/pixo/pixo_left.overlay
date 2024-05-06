@@ -1,6 +1,7 @@
 #include "pixo.dtsi" // Notice that the main dtsi files are included in the overlay.
 
 &kscan0 {
+    wakeup-source;
     col-gpios
         = <&xiao_d 4 GPIO_ACTIVE_HIGH> // col1 in the schematic
         , <&xiao_d 3 GPIO_ACTIVE_HIGH> // col2 in the schematic
