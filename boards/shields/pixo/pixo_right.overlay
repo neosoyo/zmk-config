@@ -5,6 +5,7 @@
 };
 
 &kscan0 {
+    wakeup-source;
     col-gpios
         = <&xiao_d 5 GPIO_ACTIVE_HIGH> // col6 in the schematic
         , <&xiao_d 0 GPIO_ACTIVE_HIGH> // col5 in the schematic
