@@ -1,8 +1,8 @@
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/outputs.h>
 #include "keys_pt_abnt2.h"
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 
 #define BASE 0
 #define DVO  1
@@ -11,70 +11,74 @@
 #define FUN  4
 
 &mt {
-  quick-tap-ms = <100>;
-  global-quick-tap;
-  flavor = "hold-preferred";
-  tapping-term-ms = <400>;
+    quick-tap-ms = <100>;
+    global-quick-tap;
+    flavor = "hold-preferred";
+    tapping-term-ms = <400>;
 };
 
 / {
-       macros {
-            cedilha: cedilha {
-                compatible = "zmk,behavior-macro";
-                #binding-cells = <0>;
-                bindings = <&macro_tap &kp APOS &kp C>;
-            };
+    macros {
+        cedilha: cedilha {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp APOS &kp C>;
         };
-        keymap {
-                compatible = "zmk,keymap";
-// ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+    };
 
-                base_layer {
-display-name= "BASE";
- bindings = <
-    &kp PT_Q      &kp PT_W      &kp PT_E       &kp PT_R       &kp PT_T          &mt PT_LPAR PT_Y  &mt PT_LBKT PT_U &mt PT_LBRC PT_I &kp PT_O   &kp PT_P
-    &mt LGUI PT_A &mt LALT PT_S &mt LCTRL PT_D &mt LSHFT PT_F &kp PT_G          &mt PT_RPAR PT_H  &mt PT_RBKT PT_J &mt PT_RBRC PT_K &kp PT_L   &mt PT_SQT PT_SEMI
-    &kp PT_Z      &kp PT_X      &kp PT_C       &kp PT_V       &kp PT_B          &mt PT_UNDER PT_N &kp PT_M         &kp PT_COMMA     &kp PT_DOT &kp PT_FSLH
-                                &kp ESC        &kp PT_SPACE   &lt NAV TAB       &lt SYM RET       &kp BSPC         &kp DEL 
-                        >;
-                };
-               dvo_layer {
-display-name= "DVORAK";
- bindings = <
+    keymap {
+        compatible = "zmk,keymap";
 
-    &kp PT_QMARK &mt PT_CARET PT_TILDE &mt PT_GRAVE PT_ACUTE &kp PT_H       &kp PT_X       &kp PT_W         &kp PT_L    &kp PT_T   &kp PT_C &kp PT_P
-    &kp PT_I     &kp PT_E              &kp PT_A              &kp PT_O       &kp PT_U       &kp PT_M         &kp PT_D    &kp PT_S   &kp PT_R &kp PT_N  
-    &kp PT_Y     &kp PT_C_CEDILLA      &kp PT_J              &kp PT_B       &kp PT_K       &kp PT_Q         &kp PT_V    &kp PT_G   &kp PT_F &kp PT_Z
-                                       &kp ESC               &kp PT_SPACE   &lt NAV TAB    &lt FUN RET      &kp BSPC    &kp DEL 
-                        >;
-                };
-                sym_layer {
-display-name= "SYMBOLS";                    
- bindings = <
+        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
-    &kp PT_PLUS          &kp PT_N7         &kp PT_N8          &kp PT_N9          &mt PT_GT PT_LT   &kp PT_EXCL  &kp PT_AT_SIGN &kp PT_HASH   &kp PT_DOLLAR  &kp PT_PERCENT
-    &mt LGUI PT_MINUS    &mt LALT PT_N4    &mt LCTRL PT_N5    &mt LSHFT PT_N6    &kp PT_DOT        &kp PT_AMPS  &kp PT_ASTRK   &kp PT_UNDER  &kp PT_EQUAL   &kp PT_QMARK
-    &kp PT_N0            &kp PT_N1         &kp PT_N2          &kp PT_N3          &kp PT_FSLH       &kp PT_CARET &kp PT_TILDE   &kp PT_APOS   &mt PT_GRAVE PT_ACUTE   &kp PT_BSLH      
-                                           &kp ESC            &kp PT_SPACE       &lt FUN TAB       &trans       &kp BSPC       &kp DEL     
-                        >;
-                };
-                nav_layer {
-display-name= "NAV";                   
- bindings = <                    
-    &kp C_AC_CLOSE &kp PT_AT   &kp PT_HASH &kp PT_DLLR  &kp C_VOL_UP    &kp PG_UP    &kp HOME    &kp UP     &kp END    &kp PSCRN    
-    &kp LCTRL      &kp LGUI    &kp LALT    &kp LSHFT    &kp C_VOL_DN    &kp PG_DN    &kp LEFT    &kp DOWN   &kp RIGHT  &kp CAPS 
-    &kp LC(Z)      &kp LC(X)   &kp LC(C)   &kp LC(V)    &kp C_PP        &kp INS      &kp DELETE  &kp C_PREV &kp C_NEXT &kp PAUSE_BREAK         
-                               &kp LGUI    &kp LCTRL    &trans          &lt FUN RET  &kp BSPC    &kp DEL      
-                        >;
-                };
-                fun_layer {
-display-name= "FUNCTION";                    
- bindings = <                    
-    &kp F1 &kp F2 &kp F3      &kp F4     &kp F5    &kp CAPS     &trans       &trans       &tog DVO        &trans     
-    &kp F6 &kp F7 &kp F8      &kp F9     &kp F10   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3    &trans 
-    &trans &trans &trans      &kp F11    &kp F12   &out OUT_USB &out OUT_BLE &kp PSCRN    &kp PAUSE_BREAK &bt BT_CLR         
-                  &bootloader &sys_reset &trans    &trans       &sys_reset   &bootloader      
-                        >;
-                };
+        qwerty {
+            display-name = "BASE";
+            bindings = <
+&kp PT_Q       &kp PT_W       &kp PT_E        &kp PT_R        &kp PT_T     &mt PT_LPAR PT_Y   &mt PT_LBKT PT_U  &mt PT_LBRC PT_I  &kp PT_O    &kp PT_P
+&mt LGUI PT_A  &mt LALT PT_S  &mt LCTRL PT_D  &mt LSHFT PT_F  &kp PT_G     &mt PT_RPAR PT_H   &mt PT_RBKT PT_J  &mt PT_RBRC PT_K  &kp PT_L    &mt PT_SQT PT_SEMI
+&kp PT_Z       &kp PT_X       &kp PT_C        &kp PT_V        &kp PT_B     &mt PT_UNDER PT_N  &kp PT_M          &kp PT_COMMA      &kp PT_DOT  &kp PT_FSLH
+                              &kp ESC         &kp PT_SPACE    &lt NAV TAB  &lt SYM RET        &kp BSPC          &kp DEL
+            >;
         };
+
+        dvorak_br_nativo {
+            display-name = "DVORAK";
+            bindings = <
+&kp PT_QMARK  &mt PT_CARET PT_TILDE  &mt PT_GRAVE PT_ACUTE  &kp PT_H      &kp PT_X            &kp PT_W   &kp PT_L  &kp PT_T  &kp PT_C  &kp PT_P
+&kp PT_I      &kp PT_E               &kp PT_A               &kp PT_O      &kp PT_U            &kp PT_M   &kp PT_D  &kp PT_S  &kp PT_R  &kp PT_N
+&kp PT_Y      &kp PT_C_CEDILLA       &kp PT_J               &kp PT_B      &kp PT_K            &kp PT_Q   &kp PT_V  &kp PT_G  &kp PT_F  &kp PT_Z
+                                     &kp ESC                &kp PT_SPACE  &lt NAV LEFT_SHIFT  &lt 2 RET  &kp BSPC  &kp DEL
+            >;
+        };
+
+        Symbols_layer {
+            display-name = "SYMBOLS";
+            bindings = <
+&kp PT_PLUS        &kp PT_N7       &kp PT_N8        &kp PT_N9        &mt PT_GT PT_LT  &kp PT_EXCL   &kp PT_AT_SIGN  &kp PT_HASH   &kp PT_DOLLAR          &kp PT_PERCENT
+&mt LGUI PT_MINUS  &mt LALT PT_N4  &mt LCTRL PT_N5  &mt LSHFT PT_N6  &kp PT_DOT       &kp PT_AMPS   &kp PT_ASTRK    &kp PT_UNDER  &kp PT_EQUAL           &kp PT_QMARK
+&kp PT_N0          &kp PT_N1       &kp PT_N2        &kp PT_N3        &kp PT_FSLH      &kp PT_CARET  &kp PT_TILDE    &kp PT_APOS   &mt PT_GRAVE PT_ACUTE  &kp PT_BSLH
+                                   &kp ESC          &kp PT_SPACE     &lt FUN TAB      &trans        &kp BSPC        &kp DEL
+            >;
+        };
+
+        navigation_layer {
+            display-name = "NAV";
+            bindings = <
+&kp C_AC_CLOSE  &kp PT_AT  &kp PT_HASH  &kp PT_DLLR  &kp C_VOL_UP  &kp PG_UP    &kp HOME    &kp UP      &kp END     &kp PSCRN
+&kp LCTRL       &kp LGUI   &kp LALT     &kp LSHFT    &kp C_VOL_DN  &kp PG_DN    &kp LEFT    &kp DOWN    &kp RIGHT   &kp CAPS
+&kp LC(Z)       &kp LC(X)  &kp LC(C)    &kp LC(V)    &kp C_PP      &kp INS      &kp DELETE  &kp C_PREV  &kp C_NEXT  &kp PAUSE_BREAK
+                           &kp LGUI     &kp LCTRL    &trans        &lt FUN RET  &kp BSPC    &kp DEL
+            >;
+        };
+
+        function_layer {
+            display-name = "FUNCTION";
+            bindings = <
+&kp F1  &kp F2  &kp F3       &kp F4      &kp F5   &kp CAPS      &trans        &trans        &tog DVO         &trans
+&kp F6  &kp F7  &kp F8       &kp F9      &kp F10  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3     &trans
+&trans  &trans  &trans       &kp F11     &kp F12  &out OUT_USB  &out OUT_BLE  &kp PSCRN     &kp PAUSE_BREAK  &bt BT_CLR
+                &bootloader  &sys_reset  &trans   &trans        &sys_reset    &bootloader
+            >;
+        };
+    };
 };
