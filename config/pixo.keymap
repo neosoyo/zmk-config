@@ -1,6 +1,9 @@
 #ifndef KEYMAP_DRAWER
-    #include "keys_pt_abnt2.h"
+
+#include "keys_pt_abnt2.h"
+
 #endif
+
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
@@ -98,10 +101,10 @@
         dvorak_br_nativo {
             display-name = "DVORAK";
             bindings = <
-&kp PT_QMARK    &mt PT_CARET PT_TILDE  &mt PT_GRAVE PT_ACUTE  &kp PT_H        &kp PT_X            &kp PT_W   &kp PT_L        &kp PT_T       &kp PT_C       &kp PT_P
-&mt LCTRL PT_I  &mt LGUI PT_E          &mt LALT PT_A          &mt LSHFT PT_O  &kp PT_U            &kp PT_M   &mt RSHFT PT_D  &mt LALT PT_S  &mt RGUI PT_R  &mt RCTRL PT_N
-&kp PT_Y        &kp PT_C_CEDILLA       &kp PT_J               &kp PT_B        &kp PT_K            &kp PT_Q   &kp PT_V        &kp PT_G       &kp PT_F       &kp PT_Z
-                                       &kp ESC                &kp PT_SPACE    &lt NAV LEFT_SHIFT  &lt 2 RET  &kp BSPC        &kp DEL
+&kp PT_QMARK    &mt PT_CARET PT_TILDE  &mt PT_GRAVE PT_ACUTE  &kp PT_H        &kp PT_X     &kp PT_W   &kp PT_L        &kp PT_T       &kp PT_C       &kp PT_P
+&mt LCTRL PT_I  &mt LGUI PT_E          &mt LALT PT_A          &mt LSHFT PT_O  &kp PT_U     &kp PT_M   &mt RSHFT PT_D  &mt LALT PT_S  &mt RGUI PT_R  &mt RCTRL PT_N
+&kp PT_Y        &kp PT_C_CEDILLA       &kp PT_J               &kp PT_B        &kp PT_K     &kp PT_Q   &kp PT_V        &kp PT_G       &kp PT_F       &kp PT_Z
+                                       &kp ESC                &kp PT_SPACE    &lt NAV TAB  &lt 2 RET  &kp BSPC        &kp DEL
             >;
         };
 
