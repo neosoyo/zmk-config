@@ -1,4 +1,6 @@
-#include "keys_pt_abnt2.h"
+#ifndef KEYMAP_DRAWER
+    #include "keys_pt_abnt2.h"
+#endif
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
