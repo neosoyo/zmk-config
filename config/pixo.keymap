@@ -81,6 +81,18 @@
             key-positions = <13 12>;
             layers = <0 1>;
         };
+
+        ponto-virgula {
+            bindings = <&kp PT_SEMICOLON>;
+            key-positions = <2 3>;
+            layers = <0 1>;
+        };
+
+        dois-ponto {
+            bindings = <&kp PT_COLON>;
+            key-positions = <7 6>;
+            layers = <1 0>;
+        };
     };
 
     keymap {
