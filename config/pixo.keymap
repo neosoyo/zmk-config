@@ -96,6 +96,18 @@
             bindings = <&kp PT_SQT>;
             key-positions = <26 27>;
         };
+
+        menorq {
+            bindings = <&kp PT_LT>;
+            key-positions = <10 11>;
+            layers = <0 1>;
+        };
+
+        maiorq {
+            bindings = <&kp PT_GT>;
+            key-positions = <18 19>;
+            layers = <1 0>;
+        };
     };
 
     keymap {
