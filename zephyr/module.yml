@@ -1,3 +1,4 @@
+name: zmk-kayboard-pixo
 build:
   settings:
     board_root: .

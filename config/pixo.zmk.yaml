@@ -1,0 +1,13 @@
+file_format: "1"
+id: pixo
+name: Pixo
+type: shield
+url: https://github.com/neosoyo/pixo
+requires:
+  - seeeduino_xiao_ble
+exposes:
+features:
+  - keys
+siblings:
+  - pixo_left
+  - pixo_right
