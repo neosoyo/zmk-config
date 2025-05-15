@@ -3,11 +3,11 @@ id: pixo
 name: Pixo
 type: shield
 url: https://github.com/neosoyo/pixo
-requires:
-  - seeeduino_xiao_ble
+requires: [seeeduino_xiao_ble]
 exposes:
 features:
   - keys
+  - studio
 siblings:
   - pixo_left
   - pixo_right
