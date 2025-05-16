@@ -1,6 +1,7 @@
 #include <physical_layouts.dtsi>
-/ {
-    pixo_physical_layout: pixo_physical_layout {
+
+{
+    physical_layout0: physical_layout0 {
         compatible = "zmk,physical-layout";
         display-name = "Pixo";
         kscan = <&kscan0>;
@@ -49,8 +50,8 @@
     position_map {
         compatible = "zmk,physical-layout-position-map";
         complete;
-        default_layout: default_layout {
-            physical-layout = <&pixo_physical_layout>;
+        default_layout0: default_layout0 {
+            physical-layout = <&physical_layout0>;
             positions 
                 = < 0   1   2   3   4   5   6   7   8   9>
                 , <10  11  12  13  14  15  16  17  18  19>
