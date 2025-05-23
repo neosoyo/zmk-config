@@ -119,11 +119,13 @@
         barra {
             bindings = <&kp PT_BACKSLASH>;
             key-positions = <0 1>;
+            layers = <0 1 5 6>;
         };
 
         barra-inv {
             bindings = <&kp PT_FSLH>;
             key-positions = <8 9>;
+            layers = <0 1 5 6>;
         };
     };
 
