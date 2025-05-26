@@ -26,67 +26,67 @@
     combos {
         compatible = "zmk,combos";
 
-        Lbkt {
+        leftBracket {
             bindings = <&kp PT_LBKT>;
             key-positions = <11 12>;
             layers = <0 1 5 6>;
         };
 
-        Lpar {
+        leftPar {
             bindings = <&kp PT_LPAR>;
             key-positions = <21 22>;
             layers = <0 1 5 6>;
         };
 
-        Lbrace {
+        leftBrace {
             bindings = <&kp PT_LEFT_BRACE>;
             key-positions = <1 2>;
             layers = <0 1 5 6>;
         };
 
-        Rbrace {
+        rightBrace {
             bindings = <&kp PT_RIGHT_BRACE>;
             key-positions = <7 8>;
             layers = <0 1 5 6>;
         };
 
-        Rbracket {
+        rightBracket {
             bindings = <&kp PT_RBKT>;
             key-positions = <17 18>;
             layers = <0 1 5 6>;
         };
 
-        Rpar {
+        rightPar {
             bindings = <&kp PT_RPAR>;
             key-positions = <27 28>;
             layers = <0 1 5 6>;
         };
 
-        Virgula {
+        virgula {
             bindings = <&kp PT_COMMA>;
             key-positions = <16 17>;
             layers = <0 1 5 6>;
         };
 
-        Ponto {
+        ponto {
             bindings = <&kp PT_PERIOD>;
             key-positions = <13 12>;
             layers = <0 1 5 6>;
         };
 
-        ponto-virgula {
+        pontoVirgula {
             bindings = <&kp PT_SEMICOLON>;
             key-positions = <2 3>;
             layers = <0 1 5 6>;
         };
 
-        dois-ponto {
+        doisPonto {
             bindings = <&kp PT_COLON>;
             key-positions = <7 6>;
             layers = <1 0 5 6>;
         };
 
-        d-aspas {
+        duplaAspas {
             bindings = <&kp PT_DOUBLE_QUOTES>;
             key-positions = <23 22>;
             layers = <0 1 5 6>;
@@ -98,19 +98,19 @@
             layers = <0 1 5 6>;
         };
 
-        menorq {
+        menorQ {
             bindings = <&kp PT_LT>;
             key-positions = <10 11>;
             layers = <0 1 5 6>;
         };
 
-        maiorq {
+        maiorQ {
             bindings = <&kp PT_GT>;
             key-positions = <18 19>;
             layers = <1 0 5 6>;
         };
 
-        barra-V {
+        barraVertical {
             bindings = <&kp PT_PIPE>;
             key-positions = <20 21>;
             layers = <0 1 5 6>;
@@ -122,7 +122,7 @@
             layers = <0 1 5 6>;
         };
 
-        barra-inv {
+        barraInvertida {
             bindings = <&kp PT_FSLH>;
             key-positions = <8 9>;
             layers = <0 1 5 6>;
