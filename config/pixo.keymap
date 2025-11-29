@@ -147,7 +147,7 @@
         dvorak_br_nativo {
             display-name = "DVORAK";
             bindings = <
-&kp PT_QMARK    &kp PT_C          &kp PT_P       &kp PT_H        &kp PT_X     &kp PT_W   &kp PT_L        &kp PT_T       &mt PT_CARET PT_TILDE  &mt PT_ACUTE PT_GRAVE
+&kp PT_QMARK    &kp PT_C          &kp PT_P       &kp PT_H        &kp PT_X     &kp PT_W   &kp PT_L        &kp PT_T       &mt PT_CARET PT_TILDE  &mt PT_GRAVE PT_ACUTE
 &mt LCTRL PT_I  &mt LGUI PT_E     &mt LALT PT_A  &mt LSHFT PT_O  &kp PT_U     &kp PT_M   &mt RSHFT PT_D  &mt LALT PT_S  &mt RGUI PT_R          &mt RCTRL PT_N
 &kp PT_Y        &kp PT_C_CEDILLA  &kp PT_J       &kp PT_B        &kp PT_K     &kp PT_Q   &kp PT_V        &kp PT_G       &kp PT_F               &kp PT_Z
                                   &kp ESC        &kp PT_SPACE    &lt NAV TAB  &lt 2 RET  &kp BSPC        &kp DEL
