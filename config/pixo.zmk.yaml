@@ -3,7 +3,7 @@ id: pixo
 name: Pixo
 type: shield
 url: https://github.com/neosoyo/pixo
-requires: [xiao_ble]
+requires: [xiao_ble//zmk]
 exposes:
 features:
   - keys
