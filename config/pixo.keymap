@@ -64,13 +64,13 @@
 
         virgula {
             bindings = <&kp PT_COMMA>;
-            key-positions = <13 14>;
+            key-positions = <13 12>;
             layers = <0 1 5 6>;
         };
 
         ponto {
             bindings = <&kp PT_PERIOD>;
-            key-positions = <16 15>;
+            key-positions = <16 17>;
             layers = <0 1 5 6>;
         };
 
@@ -130,12 +130,12 @@
 
         underscore {
             bindings = <&kp UNDER>;
-            key-positions = <12 13>;
+            key-positions = <14 13>;
         };
 
         equal {
             bindings = <&kp EQUAL>;
-            key-positions = <16 17>;
+            key-positions = <15 16>;
         };
     };
 
@@ -167,10 +167,10 @@
         Symbols_layer {
             display-name = "SYMBOLS";
             bindings = <
-&kp PT_EXCLAMATION  &kp POUND                          &kp PIPE  &kp PT_DOLLAR  &kp PT_NOT   &kp PT_BACKSLASH  &kp PT_N7  &kp PT_N8  &kp PT_N9  &kp PT_MASCULINE_ORDINAL_INDICATOR
-&kp AMPS            &kp AT                             &kp PLUS  &kp PT_MINUS   &kp PRCNT    &kp PT_N0         &kp PT_N4  &kp PT_N5  &kp PT_N6  &kp PT_FEMININE_ORDINAL_INDICATOR
-&kp PT_SECTION      &kp PT_FEMININE_ORDINAL_INDICATOR  &kp FSLH  &kp PT_ASTRK   &kp APOS     &kp PT_SEMICOLON  &kp PT_N1  &kp PT_N2  &kp PT_N3  &kp PT_DEGREE
-                                                       &kp ESC   &kp PT_SPACE   &lt FUN TAB  &trans            &kp BSPC   &kp DEL
+&kp PT_EXCLAMATION  &kp POUND      &kp PIPE  &kp PT_DOLLAR  &kp PT_NOT      &kp PT_MASCULINE_ORDINAL_INDICATOR  &kp PT_N7  &kp PT_N8  &kp PT_N9  &kp COMMA
+&kp AMPS            &kp AT         &kp PLUS  &kp PT_MINUS   &kp APOS        &kp PT_FEMININE_ORDINAL_INDICATOR   &kp PT_N4  &kp PT_N5  &kp PT_N6  &kp N0
+&kp PRCNT           &kp PT_UMLAUT  &kp FSLH  &kp PT_ASTRK   &kp PT_SECTION  &kp PT_DEGREE                       &kp PT_N1  &kp PT_N2  &kp PT_N3  &kp DOT
+                                   &kp ESC   &kp PT_SPACE   &lt FUN TAB     &trans                              &kp BSPC   &kp DEL
             >;
         };
 
