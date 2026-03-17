@@ -168,8 +168,8 @@
             display-name = "SYMBOLS";
             bindings = <
 &kp PT_EXCLAMATION  &kp POUND      &kp PIPE  &kp PT_DOLLAR  &kp PT_NOT      &kp PT_MASCULINE_ORDINAL_INDICATOR  &kp PT_N7  &kp PT_N8  &kp PT_N9  &kp COMMA
-&kp AMPS            &kp AT         &kp PLUS  &kp PT_MINUS   &kp APOS        &kp PT_FEMININE_ORDINAL_INDICATOR   &kp PT_N4  &kp PT_N5  &kp PT_N6  &kp N0
-&kp PRCNT           &kp PT_UMLAUT  &kp FSLH  &kp PT_ASTRK   &kp PT_SECTION  &kp PT_DEGREE                       &kp PT_N1  &kp PT_N2  &kp PT_N3  &kp DOT
+&kp AMPS            &kp AT         &kp PLUS  &kp PT_MINUS   &kp APOS        &kp PT_FEMININE_ORDINAL_INDICATOR   &kp PT_N4  &kp PT_N5  &kp PT_N6  &kp DOT
+&kp PRCNT           &kp PT_UMLAUT  &kp FSLH  &kp PT_ASTRK   &kp PT_SECTION  &kp PT_DEGREE                       &kp PT_N1  &kp PT_N2  &kp PT_N3  &kp N0
                                    &kp ESC   &kp PT_SPACE   &lt FUN TAB     &trans                              &kp BSPC   &kp DEL
             >;
         };
